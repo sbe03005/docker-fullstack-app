@@ -27,6 +27,12 @@ services:
     volumes:
       - /app/node_modeules
       - ./backend:/app
+    environment: 
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: qkrdndrl123
+      MYSQL_DATABASE: myapp
+      MYSQL_PORT: 3306
       
   # mysql:
   #   build: ./mysql
